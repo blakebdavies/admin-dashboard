@@ -237,14 +237,14 @@ main .date {
     padding: 0.5rem 1.6rem;
 }
 
-main .date input {
+main .date input[type="date"] {
     background: transparent;
     color: var(--color-dark);
 }
 
 main .insights {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 1.6rem;
 }
 
@@ -260,7 +260,6 @@ main .insights > div {
 main .insights > div:hover {
     box-shadow: none;
 }
-
 
 main .insights > div span {
     background: var(--color-primary);
@@ -278,7 +277,7 @@ main .insights > div.income span {
     background: var(--color-success);
 }
 
-main .insights > div.middle {
+main .insights > div .middle {
     display: flex;
     align-items: center;
     justify-content: space-between;
